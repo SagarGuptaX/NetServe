@@ -1,0 +1,11 @@
+build/
+cmake-build-*/
+.cmake/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+*.o
+*.a
+*.so
+*.out
+netserve
