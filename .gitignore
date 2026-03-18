@@ -1,11 +1,36 @@
-build/
+#----EXTRAS-----
 cmake-build-*/
 .cmake/
+netserve
+
+# ---------------------------------------------------
+# Build Artifacts & CMake
+# ---------------------------------------------------
+build/
+bin/
 CMakeCache.txt
 CMakeFiles/
 Makefile
+cmake_install.cmake
+*.cmake
+
+# ---------------------------------------------------
+# Compiled Object Files & Executables
+# ---------------------------------------------------
 *.o
-*.a
+*.obj
 *.so
+*.dll
+*.a
+*.lib
 *.out
-netserve
+*.exe
+*.app
+
+# ---------------------------------------------------
+# IDE & OS Files
+# ---------------------------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
