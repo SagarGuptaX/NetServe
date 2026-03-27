@@ -7,8 +7,10 @@ namespace http {
 
 struct HttpRequest {
     std::string method;
-    std::string path;
+    std::string path;          // path only, query string stripped
+    std::string query_string;  // raw text after '?'
     std::unordered_map<std::string, std::string> headers;
+    std::unordered_map<std::string, std::string> query_params; // parsed key=value
 };
 
 struct HttpResponse {
